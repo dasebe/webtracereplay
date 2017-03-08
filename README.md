@@ -8,7 +8,7 @@ There are three components:
  - the server: which accepts, processes, and caches these http requests
  - the origin: which emulates a database or storage server
 
-The webcachesim simulator was built for the [AdaptSize project](https://github.com/dasebe/AdaptSize), see [References](#references) for more information.
+These tools were built for the [AdaptSize project](https://github.com/dasebe/AdaptSize), see [References](#references) for more information.
 
 ## Install webtracereplay
 
