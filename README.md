@@ -5,7 +5,7 @@ This project provides simple tools to replay http request traces to evaluate the
 There are three components:
 
  - the client: which reads in the trace file and generates valid http requests
- - the server: which accepts, processes, and caches these http requests
+ - the server which you are trying to benchmark, e.g., nginx, Varnish, Apache TS, etc.
  - the origin: which emulates a database or storage server
 
 These tools were built for the [AdaptSize project](https://github.com/dasebe/AdaptSize), see [References](#references) for more information.
