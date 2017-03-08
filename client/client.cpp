@@ -122,8 +122,8 @@ int requestCreate(){
   ifstream infile;
   infile.open(path);
   unordered_map<long, long> osizes;
-  long time, id, size, served;
-  while (infile >> time >> id >> size >> served) {
+  long time, id, size;
+  while (infile >> time >> id >> size) {
     if(urlQueue.size()>1000) {
       this_thread::sleep_for (chrono::milliseconds(10));
     }
