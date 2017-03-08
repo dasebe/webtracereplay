@@ -8,6 +8,8 @@ There are three components:
  - the server: which accepts, processes, and caches these http requests
  - the origin: which emulates a database or storage server
 
+The webcachesim simulator was built for the [AdaptSize project](https://github.com/dasebe/AdaptSize), see [References](#references) for more information.
+
 ## Install webtracereplay
 
 Please install
@@ -84,3 +86,22 @@ Start these one after another.
 #### Start trace replaying and write throughput and delay measurements to through.log and histogram.log respectively
 
      client/client client.tr 20 127.0.0.1:7000 throughput.log histogram.log
+
+
+
+## Contributors are welcome
+
+Want to contribute? Great! We follow the [Github contribution work flow](https://help.github.com/articles/github-flow/).
+This means that submissions should fork and use a Github pull requests to get merged into this code base.
+
+If you come across a bug in webcachesim, please file a bug report by [creating a new issue](https://github.com/dasebe/webcachesim/issues/new).
+
+## References
+
+We ask academic works, which built on this code, to reference the AdaptSize paper:
+
+    AdaptSize: Orchestrating the Hot Object Memory Cache in a CDN
+    Daniel S. Berger, Ramesh K. Sitaraman, Mor Harchol-Balter
+    To appear in USENIX NSDI in March 2017.
+    
+You can find more information on [USENIX NSDI 2017 here.](https://www.usenix.org/conference/nsdi17/technical-sessions)
