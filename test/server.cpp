@@ -1,3 +1,6 @@
+// install http://pistache.io
+// compile with g++ -g -Wall -Werror -o server -std=c++11 -O3 server.cpp -lpistache
+
 #include "pistache/endpoint.h"
 #include <pistache/http_headers.h>
 #include <pistache/http.h>
@@ -40,7 +43,7 @@ int main() {
 
     Pistache::Address addr(Pistache::Ipv4::any(), Pistache::Port(9080));
     auto opts = Pistache::Http::Endpoint::options()
-        .threads(1);
+        .threads(8);
 
     Http::Endpoint server(addr);
     server.init(opts);
@@ -49,3 +52,4 @@ int main() {
 
     server.shutdown();
 }
+
