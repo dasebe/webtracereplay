@@ -24,11 +24,11 @@ There are Makefiles for the client and origin:
     make
     cd ..
 
-    cd server
+    cd origin
     make
 
 
-Also compile and install a webserver/caching system, such as nginx. The example config in the server subfolder assumes we are using nginx.
+Also compile and install a webserver/caching system, such as nginx. The example config in the server subfolder assumes we are using nginx. You can either point nginx to use the configuration file server/nginx.conf or copy the directory to /usr/share/nginx .
 
 
 ## Request traces
